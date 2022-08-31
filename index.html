@@ -9,68 +9,72 @@
     content="I'm so passionate when it comes to Frontend Engineer, anthusiast learning test drivent development and performance. Well experienced in JavaScript, TypeScript, React, Next, and any other Frontend concepts. Furthermore, I like to discuss and grow up together, I truly believe it can shape the way I think to solve any kind of problem.">
   <meta name="theme-color" content="#1F2028" />
   <title>Naufal Yukafi Ridlo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <a href="#main">Skip To Content</a>
-  <div>
+  <a href="#main" class="skip__content">Skip To Content</a>
+  <nav class="nav">
+    <header class="nav__header">
+      <h1><a href="/" class="nav__header-title">Naufal Yukafi Ridlo</a></h1>
+    </header>
+    <ul class="nav__list">
+      <li><a href="/" class="nav__item">Home</a></li>
+      <li><a href="/blog" class="nav__item">Blog</a></li>
+      <li><a href="/projects" class="nav__item">Projects</a></li>
+    </ul>
     <div>
-      <header>
-        <h1><a href="/">Naufal Yukafi Ridlo</a></h1>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Projects</a></li>
-        </ul>
-      </nav>
-      <div>
-        <button aria-label="mode">Dark Mode</button>
-        <button aria-label="humberger">☰</button>
-      </div>
+      <i class="fa fa-moon-o icon" aria-hidden="true"></i>
+      <button class="menu__button" aria-label="menu button">☰</button>
     </div>
-  </div>
+  </nav>
 
-  <main>
+
+  <main id="main">
     <section>
-
-      <article>
-        <div>
-          <h2>Hello It’s Me,</h2>
-          <h2>Naufal Yukafi Ridlo</h2>
-          <p>I'm so passionate when it comes to Frontend Engineer, anthusiast learning test drivent development and
+      <article class="headline">
+        <div class="headline__content">
+          <p class="text__lg">
+            <span class="headline__title text__4xl block">Hello It’s Me,</span>
+            <span class="headline__subtitle text__4xl block">Naufal Yukafi Ridlo</span>
+            I'm so passionate when it comes to Frontend Engineer, anthusiast learning test drivent development and
             performance. Well experienced in JavaScript, TypeScript, React, Next, and any other Frontend concepts.
             Furthermore, I like to discuss and grow up together, I truly believe it can shape the way I think to solve
-            any kind of problem.</p>
+            any kind of problem.
+          </p>
         </div>
-        <figure>
+        <figure class="headline__figure">
           <img src="./public/images/profile.png" alt="Naufal Yukafi Ridlo">
         </figure>
       </article>
 
-      <div>
-        <h2>Connect With Yukafi</h1>
-          <div>
-            <img src="./public/logo/twiter.png" alt="Twiter">
-            <img src="./public/logo/linkedin.png" alt="Linkedin">
-            <img src="./public/logo/github.png" alt="Github">
-          </div>
+      <div class="connect">
+        <h2>Connect With Yukafi</h2>
+        <div class="connect__logo">
+          <img src="./public/logo/twiter.png" alt="Twiter">
+          <img src="./public/logo/linkedin.png" alt="Linkedin">
+          <img src="./public/logo/github.png" alt="Github">
+        </div>
       </div>
 
-      <article>
-        <figure>
+      <article class="headline">
+        <figure class="headline__figure">
           <img src="./public/images/activity.png" alt="Naufal Yukafi Ridlo">
         </figure>
-        <div>
-          <h2>My Frontend Engineer Journey</h2>
+        <div class="headline__content">
+          <h2 class="headline__title">My Frontend Engineer Journey</h2>
           <p>Starting my journey in 2020, at that time I joined the Workshop Riset Informatika community, starting with
             learning javascript and working on several side projects. Long story short, given the opportunity with
             seniors to create a project together using React.js, this was my first step in learning React Stacks, my
             seniors gave me the opportunity to explore new frontend stacks like TypeScript, React Hooks and Unit
             Testing.</p>
           <p>For each week, must present the results that have been learned to the team, then integrate them into the
-            project. In 2021, I take an internship in a <span>startup company</span>. Not long after, I worked on
+            project. In 2021, I take an internship in a <span class="link">startup company</span>. Not long after, I
+            worked on
             several freelance
             projects with my lecturer at the Politeknik Negeri Malang. Now, very excited to continue my journey by
             improving my skills as a Frontend Engineer.</p>
@@ -78,27 +82,7 @@
 
       </article>
 
-      <div>
-        <h2>My Skills</h2>
-        <p>Checkout some of my skills</p>
-        <button>Frontend Development</button>
-        <div>
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button>Automated Testing</button>
-        <div>
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button>Frontend performance</button>
-        <div>
-          <p>Lorem ipsum...</p>
-        </div>
-
-      </div>
-
-      <div>
+      <div class="project">
         <h2>My Project</h2>
         <p>Checkout some of my project</p>
         <div>
@@ -128,16 +112,18 @@
     </section>
   </main>
 
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__item">
       <h2>My Contact</h2>
       <p>Do you have any questions or would you like to work together with me on a project? Don't hesitate to send me a
         mail.
       </p>
-      <p>You can also check out my profile on <span>GitHub</span></p>
+      <p>You can also check out my profile on
+        <span><a href="https://github.com/naufalyukafi" class="link">GitHub</a></span>
+      </p>
     </div>
-    <div>
-      <div>All rights reserved © <span>Naufal Yukafi Ridlo</span> 2022</div>
+    <div class="footer__copyright">
+      <p>All rights reserved © <span class="link">Naufal Yukafi Ridlo</span> 2022</p>
     </div>
   </footer>
 
