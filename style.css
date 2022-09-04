@@ -58,6 +58,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+main {
+  min-height: 100vh;
+  max-width: var(--lg);
+  margin: auto;
+  padding: 15px;
+  flex: 1;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -94,24 +102,12 @@ a.nav-header-title {
   margin-bottom: 2rem;
 }
 
-main {
-  min-height: 100vh;
-  max-width: var(--lg);
-  margin: auto;
-  padding: 15px;
-  flex: 1;
-}
-
 .headline {
   min-height: 100vh;
 }
 
 .hero {
   text-align: center;
-}
-
-.headline-title {
-  margin-bottom: 2rem;
 }
 
 .headline-title,
@@ -144,8 +140,18 @@ main {
   margin: 20px 0;
 }
 
+.connect-logo img {
+  width: 100px;
+  height: 100px;
+}
+
 .journey {
   gap: 2rem;
+}
+
+.journey,
+.headline-title {
+  margin-bottom: 20px;
 }
 
 .project h2 {
@@ -268,6 +274,12 @@ main {
     position: relative;
     color: var(--color-white);
   }
+
+  .connect-logo img {
+    width: 140px;
+    height: 140px;
+  }
+
   .footer {
     width: 100%;
   }
@@ -301,5 +313,10 @@ main {
     height: 400px;
     width: full;
     display: block;
+  }
+
+  .connect-logo img {
+    width: auto;
+    height: auto;
   }
 }
